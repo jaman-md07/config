@@ -3,9 +3,9 @@ spring:
     name: order-service
 
   datasource:
-    url: jdbc:mysql://localhost:3306/orderdb_dev
+    url: jdbc:mysql://localhost:3306/zeptodb
     username: root
-    password: Test@12345
+    password: root123
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
@@ -52,4 +52,5 @@ management:
         
 logging:
   pattern:
+
     console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %5p [${spring.application.name},%X{traceId},%X{spanId}] %logger{36} - %msg%n"
